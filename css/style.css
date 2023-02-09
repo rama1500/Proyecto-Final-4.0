@@ -1,0 +1,268 @@
+
+body{
+    background: #0a122a;
+
+}
+
+header{
+    font-family: 'Space Mono', monospace;
+    color: white;
+    background-color: #5499C7;
+    padding-top: 16px;
+    padding-left: 16px;
+    border: solid 1px black;
+    width: 55%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    margin-block-end: 5px;
+}
+
+fieldset{
+    font-family: 'Lora', serif;
+    color: #616A6B;
+    text-align: left;
+    background-color:#F0F3F4;
+    margin-bottom: 10px;
+    width: 55%;
+    margin: 0 auto;
+    padding: 1px;
+    border-radius: 20px;
+    margin-block-end: 5px;
+}
+
+legend{
+    font-weight: bold;
+    border: solid 1px #3B4252;
+    padding: 5px;
+    border-radius: 20px;
+    background: #A9CCE3;
+    box-shadow: 0 0 15px #00aced;
+}
+
+#mifoto{
+    margin: 5px;
+    border: solid 2px #616A6B;
+    border-radius: 20px;
+}
+
+h1, h3{
+    margin-left: 15px;
+}
+
+ul {
+    list-style-type: fa-solid fa-code;
+    color: #616A6B;
+}
+
+.flex {
+    display: flex;
+}
+
+.info{
+    color: white;  
+}
+
+
+/*
+iconos de redes sociales animadas
+*/
+
+
+.contactos{
+    transform: translate(-50%, -50);
+    background-color: #5499C7;
+}
+
+.contactos ul{
+    list-style: none;
+}
+
+.contactos ul li{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0px 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #d8e2dc;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li .fab{
+    color: #d8e2dc;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover.facebook{
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover .fa-facebook{
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover.twitter{
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover .fa-twitter{
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover.instagram{
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover .fa-instagram{
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover.whatsapp{
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover .fa-whatsapp{
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover.google{
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover .fa-google{
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover.linkedin{
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.contactos ul li:hover .fa-linkedin{
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: #3b5998;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 640px){
+    .contactos{
+        width: 350px;
+    }
+    .contactos ul li{
+        margin-top: 10px
+    }
+    .contactos ul li.google{
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .contactos{
+        width: 150px;
+    }
+    .contactos ul li{
+        margin: 15px
+    }
+    .contactos ul li.google{
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    header, fieldset{
+        width: 350px;
+    }
+    header, fieldset ul li{
+        margin-top: 10px
+    }
+    header, fieldset ul li b{
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    header, fieldset{
+        width: 150px;
+    }
+    header, fieldset ul li{
+        margin: 15px
+    }
+    header, fieldset ul li b{
+        margin-left: 15px;
+    }
+}
+
+
+
+
+
+/*
+-..... cursor animado ......
+*/
+
+.cursor{
+    z-index: 999;
+    position: fixed;
+    background: yellow;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px yellow,
+                0 0 60px yellow,
+                0 0 100px yellow;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before{
+    content: '';
+    position: absolute;
+    background: yellow;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}

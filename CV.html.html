@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icono-de-pagina.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/funciones.js"></script>
+    <title>Mi Curriculum Vitae</title>
+</head>
+<body>
+    
+    <div class="cursor"></div>
+    <header class="flex">
+     <img src="img/Image 2023.jpeg" id="mifoto" height="170"  width="150" align="left">   
+            <div>
+                
+            <h1>Manuel Ignacio Rivas</h1>
+            <ul class="info">
+                <li><b>D.N.I. N°:</b> 39.534.681</li>
+                <li><b>Dirección:</b> Las Piedras 248</li>
+                <li><b>Fecha de Nacimiento:</b> 14/08/1999</li>
+                <li><b>Nacionalidad:</b> Argentina</li>
+                <li><b>Estado Civil:</b> Soltero</li>
+            </ul>
+            </div>
+    </header>
+
+        <div> 
+         <fieldset>
+            <legend>INFORMACIÓN ACADEMICA</legend>
+            <ul>
+                <li><b>Estudios Primarios:</b> Escuela San Marquiños</li>
+                <li><b>Estudios Secundarios:</b> Centro Politécnico</li>
+                <li><b>Estudios de Grado:</b> Analista de Sistemas (Universidad XXX)</li>             
+            </ul>
+         </fieldset>
+
+         <fieldset>
+            <legend>EXPERIENCIA PROFESIONAL</legend>
+            <ul>
+                <li>
+                    <p>Profesor de Informática <i>Colegio Técnico</i><br>
+                    <b>Desde:</b> 07-06-2015 - 
+                    <b>Hasta:</b> 10-12-2019</p>
+                </li>
+                <li>
+                    <p>Centro de Computo <i>Organización Pechito</i><br>
+                    <b>Desde:</b> 20-02-2020 - 
+                    <b>Hasta:</b> Actual</p>
+                </li>
+            </ul>
+         </fieldset>
+
+         <fieldset>
+            <legend>HABILIDADES</legend>
+            <ul>
+                <li>Proyectos de investigación.</li>
+                <li>Compromiso con metodologías innovadoras.</li>
+                <li>Competencia comunicativa.</li>
+                <li>Proximidad, asertividad y capacidad de escucha.</li>
+            </ul>
+         </fieldset>
+
+         <fieldset>
+            <legend>CURSOS</legend>
+            <ul>
+                <li>Manejo Procesador de textos</li>
+                <li>Manejo Planilla de cálculo.</li>
+                <li>Html5, CSS, JavaScript.</li>
+                <li>Phyton, PHP, Node js</li>
+            </ul>
+         </fieldset>
+         
+         <fieldset>
+            <legend id="idioma">IDIOMAS</legend>
+            <ul>
+                <li><b>Español:</b> Nativo</li>
+                <li><b>Ingles:</b> Intermedio</li>
+                <li><b>Portugues:</b> Intermedio</li>
+            </ul>
+         </fieldset>
+
+    </script>
+         <fieldset class="contactos">
+            <ul>   
+
+                <li class="facebook"><a href="https://www.facebook.com/"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="twitter"><a href="https://www.Twitter.com/"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="instagram"><a href="https://www.Instagram.com/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li class="whatsapp"><a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li class="google"><a href="https://www.gmail.com/"><i class="fab fa-google" aria-hidden="true"></i>></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin" aria-hidden="true"></i>></a></li>
+                
+            </ul>
+         </fieldset>       
+         
+       </div>  
+
+      
+
+
+    <script>
+    
+    const cursor = document.querySelector(".cursor");
+    var timeout;
+
+    document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+        cursor.style.display = "block";
+
+        function mouseStopped(){
+            cursor.style.display = "none";
+        }
+        clearTimeout(timeout);
+        timeout = setTimeout(mouseStopped, 1000);
+
+    });
+
+    document.addEventListener("mouseout", () => {
+        cursor.style.display = "none";
+    });
+
+    console.log("mouse en movimiento");
+    </script>
+
+</body>
+</html>
